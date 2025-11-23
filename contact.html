@@ -6,24 +6,42 @@
     <title>Contact - JIII</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            primary: '#1e40af',
+                            accent: '#3b82f6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm">
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24">
-                <div class="flex items-center gap-6">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center gap-4">
                     <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <img class="h-16 w-auto" src="logo.png" alt="JIII Logo">
+                        <img class="h-12 w-auto" src="logo.png" alt="JIII Logo">
                     </a>
-                    <div class="hidden lg:flex flex-col border-l-2 border-slate-900 pl-6 justify-center h-12">
-                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
-                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
+                    <div class="hidden lg:flex flex-col border-l-2 border-slate-300 pl-4 justify-center">
+                        <span class="text-sm font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
+                        <span class="text-sm font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
                     </div>
                 </div>
-                <div class="flex items-center gap-8">
-                    <div class="hidden md:flex space-x-8">
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex space-x-6">
                         <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Home</a>
                         <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims & Scope</a>
                         <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Editorial Board</a>
@@ -31,7 +49,6 @@
                         <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                         <a href="contact.html" class="text-sm font-bold text-brand-primary border-b-2 border-brand-primary pb-1">Contact</a>
                     </div>
-                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-brand-dark hover:bg-slate-800 text-white px-6 py-3 rounded text-sm font-bold transition shadow-md">View on J-STAGE</a>
                 </div>
             </div>
         </div>
@@ -44,68 +61,52 @@
         </div>
     </div>
 
-    <main class="flex-grow max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <main class="flex-grow max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         
-        <div class="grid md:grid-cols-2 gap-12">
+        <div class="grid md:grid-cols-2 gap-8">
             
-            <div class="space-y-8">
-                
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-brand-dark mb-4">Editorial Office (Secretariat)</h3>
-                    <p class="text-slate-600 mb-6 text-sm">
-                        For general inquiries, submission support, and fees.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl">📧</span>
-                            <div>
-                                <span class="block font-bold text-slate-900 text-sm">Email</span>
-                                <a href="mailto:aisymposium@jsce.or.jp" class="text-brand-primary hover:underline">aisymposium@jsce.or.jp</a>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl">🏢</span>
-                            <div>
-                                <span class="block font-bold text-slate-900 text-sm">Address</span>
-                                <p class="text-slate-600 text-sm">
-                                    Japan Society of Civil Engineers<br>
-                                    1 Yotsuya, Shinjuku-ku, Tokyo<br>
-                                    160-0004, JAPAN
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-bold text-brand-dark mb-4">Editor-in-Chief</h3>
-                    <p class="text-slate-600 mb-6 text-sm">
-                        For specific academic or editorial policy matters.
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500">
-                            <span class="text-xl">🎓</span>
-                        </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 h-full">
+                <h3 class="text-lg font-bold text-brand-dark mb-4 border-b border-slate-100 pb-2">Editorial Office (Secretariat)</h3>
+                <p class="text-slate-600 mb-6 text-sm">
+                    For general inquiries, submission support, and publication fees.
+                </p>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-brand-primary text-lg">✉️</div>
                         <div>
-                            <p class="font-bold text-slate-900">Prof. Pang-jo Chun</p>
-                            <p class="text-xs text-slate-500">University of Tokyo</p>
-                            <a href="mailto:chun@g.ecc.u-tokyo.ac.jp" class="text-sm text-brand-primary hover:underline block mt-1">chun@g.ecc.u-tokyo.ac.jp</a>
+                            <span class="block font-bold text-slate-900 text-sm">Email</span>
+                            <a href="mailto:aisymposium@jsce.or.jp" class="text-brand-primary hover:underline font-medium">aisymposium@jsce.or.jp</a>
                         </div>
-                    </div>
-                </div>
-
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-brand-primary text-lg">🏢</div>
+                        <div>
+                            <span class="block font-bold text-slate-900 text-sm">Address</span>
+                            <p class="text-slate-600 text-sm leading-relaxed mt-1">
+                                Japan Society of Civil Engineers<br>
+                                1 Yotsuya, Shinjuku-ku, Tokyo<br>
+                                160-0004, JAPAN
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <div class="bg-slate-200 rounded-xl overflow-hidden h-96 md:h-auto border border-slate-300 flex items-center justify-center">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8256515647565!2d139.72591697629538!3d35.68129847258711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c8df6343525%3A0x6b77209930965d06!2sJapan%20Society%20of%20Civil%20Engineers!5e0!3m2!1sen!2sjp!4v1718160000000!5m2!1sen!2sjp" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 h-full">
+                <h3 class="text-lg font-bold text-brand-dark mb-4 border-b border-slate-100 pb-2">Editor-in-Chief</h3>
+                <p class="text-slate-600 mb-6 text-sm">
+                    For specific academic inquiries or editorial policy matters.
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-2xl">
+                        🎓
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-900">Prof. Pang-jo Chun</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">University of Tokyo</p>
+                        <a href="mailto:chun@g.ecc.u-tokyo.ac.jp" class="text-sm text-brand-primary hover:underline block mt-1">chun@g.ecc.u-tokyo.ac.jp</a>
+                    </div>
+                </div>
             </div>
 
         </div>
