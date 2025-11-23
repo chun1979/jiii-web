@@ -23,8 +23,9 @@
                         <span class="text-sm font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
                     </div>
                 </div>
-                <div class="flex items-center gap-6">
-                    <div class="hidden md:flex space-x-6">
+                
+                <div class="hidden md:flex items-center gap-6">
+                    <div class="flex space-x-6">
                         <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Home</a>
                         <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims & Scope</a>
                         <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Editorial Board</a>
@@ -36,8 +37,33 @@
                         View on J-STAGE
                     </a>
                 </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-slate-500 hover:text-slate-900 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Home</a>
+                <a href="aims-scope.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Aims & Scope</a>
+                <a href="editorial-board.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Editorial Board</a>
+                <a href="for-authors.html" class="block px-3 py-2 rounded-md text-base font-bold text-brand-primary bg-slate-50">For Authors</a>
+                <a href="ethics.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Ethics</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Contact</a>
+                <div class="pt-4">
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="block w-full text-center bg-slate-900 text-white px-5 py-3 rounded-md text-base font-bold">
+                        View on J-STAGE
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="h-1 w-full bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500"></div>
     </nav>
 
@@ -130,5 +156,11 @@
             &copy; 2025 Japan Society of Civil Engineers.
         </div>
     </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
