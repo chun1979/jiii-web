@@ -5,147 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intelligence, Informatics and Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        /* エラーの原因となっていた .gradient-text の記述を削除しました */
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', /* Slate 900 */
+                            primary: '#1e40af', /* Blue 800 */
+                            accent: '#3b82f6', /* Blue 500 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+<body class="bg-white text-slate-800 flex flex-col min-h-screen antialiased">
 
-    <nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 bg-opacity-90 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex-shrink-0 flex items-center py-2">
-                        <img class="h-14 w-auto rounded-sm" src="logo.png" alt="JIII Logo">
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <img class="h-12 w-auto" src="logo.png" alt="JIII Logo">
                     </a>
-                    
-                    <div class="hidden sm:ml-10 sm:flex sm:space-x-8">
-                        <a href="index.html" class="border-b-2 border-cyan-400 text-slate-900 inline-flex items-center px-1 pt-1 text-sm font-bold">
-                            Home
-                        </a>
-                        <a href="aims-scope.html" class="border-transparent text-slate-500 hover:text-cyan-600 hover:border-cyan-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                            Aims & Scope
-                        </a>
-                        <a href="editorial-board.html" class="border-transparent text-slate-500 hover:text-cyan-600 hover:border-cyan-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                            Editorial Board
-                        </a>
-                        <a href="for-authors.html" class="border-transparent text-slate-500 hover:text-cyan-600 hover:border-cyan-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                            For Authors
-                        </a>
-                        <a href="ethics.html" class="border-transparent text-slate-500 hover:text-cyan-600 hover:border-cyan-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">
-                            Ethics
-                        </a>
+                    <div class="hidden lg:block border-l border-slate-200 pl-4">
+                        <span class="block text-sm font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
+                        <span class="block text-sm font-light text-slate-500 tracking-tight leading-none">and Infrastructure</span>
                     </div>
                 </div>
-                <div class="flex items-center">
-                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition transform hover:-translate-y-0.5">
-                        View on J-STAGE &rarr;
+                
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-sm font-semibold text-brand-primary">Home</a>
+                        <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Aims & Scope</a>
+                        <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Editorial Board</a>
+                        <a href="for-authors.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">For Authors</a>
+                        <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Ethics</a>
+                    </div>
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-brand-dark hover:bg-brand-primary text-white px-5 py-2 rounded-md text-sm font-medium transition shadow-sm">
+                        View on J-STAGE
                     </a>
                 </div>
             </div>
         </div>
-        <div class="h-1 w-full bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500"></div>
     </nav>
 
-    <div class="bg-slate-900 border-b border-slate-800 relative overflow-hidden">
-        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full overflow-hidden opacity-30 pointer-events-none">
-            <div class="absolute -top-24 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
-            <div class="absolute -bottom-24 right-1/4 w-96 h-96 bg-pink-500 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
-        </div>
-
-        <div class="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 sm:text-6xl sm:tracking-tight pb-2">
-                Intelligence, Informatics <br class="hidden sm:block">and Infrastructure
-            </h1>
-            <p class="mt-6 text-xl text-slate-300 max-w-3xl mx-auto">
-                An Open Access Journal published by the <br class="sm:hidden"><strong>Japan Society of Civil Engineers (JSCE)</strong>
-            </p>
-            <div class="mt-8 flex justify-center gap-4">
-                <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-slate-800 text-cyan-400 border border-slate-700">
-                    ISSN: XXXX-XXXX
-                </span>
-                <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-slate-800 text-pink-400 border border-slate-700">
-                    Open Access
+    <div class="relative bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="mb-6 flex justify-center">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-brand-primary text-xs font-bold tracking-wide uppercase">
+                    Open Access Journal
                 </span>
             </div>
+
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight mb-6">
+                Bridging <span class="text-brand-accent">AI</span> and <span class="text-brand-primary">Infrastructure</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500 font-light">
+                The official journal of the <strong>Japan Society of Civil Engineers (JSCE)</strong> dedicated to the fusion of data science and civil engineering.
+            </p>
+
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-accent hover:bg-blue-600 md:py-4 md:text-lg shadow-lg hover:shadow-xl transition">
+                    Latest Articles
+                </a>
+                <a href="for-authors.html" class="px-8 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 md:py-4 md:text-lg transition">
+                    Submit Paper
+                </a>
+            </div>
         </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark via-brand-primary to-brand-accent"></div>
     </div>
 
-    <main class="flex-grow max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div class="prose prose-slate prose-lg text-slate-600 mx-auto">
-            <h2 class="text-3xl font-bold text-slate-900 mb-6 border-l-4 border-cyan-500 pl-4">About the Journal</h2>
-            <p class="lead">
-                <em>Intelligence, Informatics and Infrastructure</em> (JIII) is a peer-reviewed open-access journal published by the <strong>Japan Society of Civil Engineers (JSCE)</strong>. It is dedicated to the intersection of artificial intelligence, informatics, and infrastructure engineering.
-            </p>
+    <main class="flex-grow max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            <div class="grid md:grid-cols-2 gap-10 mt-12">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 flex items-center">
-                        <span class="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
-                        Open Access & Archiving
-                    </h3>
-                    <p class="text-sm mt-2">
-                        This journal is fully Open Access. All articles are published under the <strong>CC BY 4.0</strong> license, allowing free access and reuse. Archives are maintained in <strong>J-STAGE</strong> and the National Diet Library.
+            <div class="lg:col-span-2 space-y-8">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4 font-serif">About the Journal</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        <em>Intelligence, Informatics and Infrastructure</em> (JIII) is a peer-reviewed open-access journal that publishes original research papers, reviews, and technical reports. We aim to provide a platform for researchers and practitioners to discuss the application of <strong>Artificial Intelligence (AI)</strong>, <strong>IoT</strong>, and <strong>Data Science</strong> in the maintenance, management, and innovation of civil infrastructure.
                     </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 flex items-center">
-                        <span class="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                        Revenue Sources
-                    </h3>
-                    <p class="text-sm mt-2">
-                        JIII is supported by Article Processing Charges (APCs) and the budget of the <strong>Committee on Structural Engineering, JSCE</strong>. We do not accept commercial advertising.
-                    </p>
+                </section>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                        <h3 class="font-bold text-brand-dark mb-2">Scopus & WoS Target</h3>
+                        <p class="text-sm text-slate-600">
+                            We adhere to high ethical standards (COPE) and rigorous peer review to meet the criteria for future inclusion in Scopus and Web of Science.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                        <h3 class="font-bold text-brand-dark mb-2">Global Reach</h3>
+                        <p class="text-sm text-slate-600">
+                            Published by JSCE, disseminated globally via J-STAGE. Fully Open Access (CC BY 4.0) ensuring maximum visibility.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
-                <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="group block p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-200 transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-slate-900 group-hover:text-cyan-600 transition-colors">Latest Articles &rarr;</h3>
-                    <p class="text-slate-500 mt-2">Browse current and past issues on J-STAGE.</p>
-                </a>
-                <a href="for-authors.html" class="group block p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-pink-200 transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-slate-900 group-hover:text-pink-600 transition-colors">Submit Paper &rarr;</h3>
-                    <p class="text-slate-500 mt-2">Check guidelines, templates, and APC info.</p>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Journal Information</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">ISSN</span>
+                            <span class="font-mono text-slate-900">XXXX-XXXX</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Publisher</span>
+                            <span class="text-right text-slate-900">JSCE</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">License</span>
+                            <span class="text-slate-900">CC BY 4.0</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span class="text-slate-500">Frequency</span>
+                            <span class="text-slate-900">Continuous</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="for-authors.html" class="block w-full text-center p-4 rounded-lg border-2 border-dashed border-brand-accent text-brand-accent font-bold hover:bg-blue-50 transition">
+                    View Author Guidelines
                 </a>
             </div>
+
         </div>
     </main>
 
-    <footer class="bg-slate-900 text-slate-300 py-12 border-t-4 border-cyan-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <div class="flex items-center mb-4">
-                    <img src="logo.png" alt="JIII" class="h-10 rounded-sm opacity-90">
+    <footer class="bg-brand-dark text-slate-400 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="flex items-center gap-3 mb-4 md:mb-0">
+                    <img src="logo.png" alt="JIII" class="h-8 opacity-80 grayscale hover:grayscale-0 transition">
+                    <span class="text-white font-serif tracking-wide">JIII</span>
                 </div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Intelligence, Informatics and Infrastructure<br>
-                    Published by JSCE
+                <div class="flex space-x-6 text-sm">
+                    <a href="editorial-board.html" class="hover:text-white transition">Editorial Board</a>
+                    <a href="ethics.html" class="hover:text-white transition">Ethics</a>
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center md:text-left text-xs">
+                <p>&copy; 2025 Japan Society of Civil Engineers (JSCE). All rights reserved.</p>
+                <p class="mt-2">
+                    Published on <a href="https://www.jstage.jst.go.jp/" class="text-slate-300 hover:text-white underline">J-STAGE</a>. 
+                    Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="text-slate-300 hover:text-white underline">CC BY 4.0</a>.
                 </p>
             </div>
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="editorial-board.html" class="hover:text-cyan-400 transition">Editorial Board</a></li>
-                    <li><a href="ethics.html" class="hover:text-cyan-400 transition">Publication Ethics</a></li>
-                    <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Contact</h4>
-                <p class="text-sm text-slate-400">
-                    <strong>JIII Editorial Office</strong><br>
-                    Japan Society of Civil Engineers<br>
-                    Yotsuya 1-chome, Shinjuku-ku, Tokyo<br>
-                    <a href="mailto:jiii-office@jsce.or.jp" class="text-cyan-400 hover:text-cyan-300 underline">jiii-office@jsce.or.jp</a>
-                </p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-            &copy; 2025 Japan Society of Civil Engineers. 
-            Articles are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="text-slate-400 hover:text-white underline">CC BY 4.0</a>.
         </div>
     </footer>
 
