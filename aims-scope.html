@@ -6,25 +6,7 @@
     <title>Aims & Scope - JIII</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            primary: '#1e40af',
-                            accent: '#3b82f6',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
@@ -49,6 +31,9 @@
                         <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                         <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Contact</a>
                     </div>
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-brand-primary text-white px-5 py-2.5 rounded text-sm font-bold transition shadow-md">
+                        View on J-STAGE
+                    </a>
                 </div>
             </div>
         </div>
@@ -66,23 +51,19 @@
             
             <div class="lg:col-span-8">
                 <div class="bg-white p-10 rounded-xl shadow-sm border border-slate-200">
-                    
                     <p class="text-lg text-slate-600 leading-relaxed mb-10">
                         Innovation and social implementation of AI, data science, and digital twins are advancing rapidly in a wide range of fields including infrastructure, disaster prevention, cities, environment, transportation, and energy.
                     </p>
-                    
                     <hr class="border-slate-100 my-8">
-
                     <div class="mb-10">
                         <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4 border-l-4 border-brand-primary pl-4">
                             Scope of the Journal
                         </h2>
                         <p class="text-slate-600 leading-relaxed">
                             <em>Intelligence, Informatics and Infrastructure</em> solicits papers from research and development, education, survey and testing, to practices in the related areas.
-                            We aim to serve as a core academic platform for research dissemination in AI and data science, with particular emphasis on their applications in civil engineering. The journal prioritizes innovation, future potential, and social relevance.
+                            We aim to serve as a core academic platform for research dissemination in AI and data science.
                         </p>
                     </div>
-
                     <div>
                         <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4 border-l-4 border-brand-primary pl-4">
                             Article Types
@@ -92,80 +73,47 @@
                                 <span class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center text-brand-primary font-bold text-xs mt-0.5 mr-3">1</span>
                                 <div>
                                     <strong class="text-slate-900">Original Research Papers</strong>
-                                    <p class="text-sm text-slate-600 mt-1">Theoretical or experimental research presenting new findings and significant contributions.</p>
+                                    <p class="text-sm text-slate-600 mt-1">Theoretical or experimental research presenting new findings.</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
                                 <span class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center text-brand-primary font-bold text-xs mt-0.5 mr-3">2</span>
                                 <div>
                                     <strong class="text-slate-900">Review Articles</strong>
-                                    <p class="text-sm text-slate-600 mt-1">Comprehensive surveys of specific topics, summarizing current status and future directions.</p>
+                                    <p class="text-sm text-slate-600 mt-1">Comprehensive surveys of specific topics.</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
                                 <span class="flex-shrink-0 h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center text-brand-primary font-bold text-xs mt-0.5 mr-3">3</span>
                                 <div>
                                     <strong class="text-slate-900">Technical Reports</strong>
-                                    <p class="text-sm text-slate-600 mt-1">Practical applications, case studies, and implementation reports in civil engineering.</p>
+                                    <p class="text-sm text-slate-600 mt-1">Practical applications and case studies.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
 
             <div class="lg:col-span-4 space-y-8">
-                
                 <div class="bg-brand-dark text-slate-300 p-8 rounded-xl shadow-md">
                     <h3 class="text-white font-bold uppercase tracking-widest text-xs mb-6 border-b border-slate-700 pb-2">Key Topics</h3>
                     <ul class="space-y-3 text-sm font-medium">
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            AI & Machine Learning
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Digital Twins & IoT
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Robotics & Automation
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Maintenance & Management
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Disaster Prevention
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Education in Informatics
-                        </li>
+                        <li class="flex items-center gap-3">AI & Machine Learning</li>
+                        <li class="flex items-center gap-3">Digital Twins & IoT</li>
+                        <li class="flex items-center gap-3">Robotics & Automation</li>
+                        <li class="flex items-center gap-3">Maintenance & Management</li>
+                        <li class="flex items-center gap-3">Disaster Prevention</li>
+                        <li class="flex items-center gap-3">Education in Informatics</li>
                     </ul>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                     <h3 class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Subject Areas</h3>
                     <ul class="space-y-3 text-sm font-medium text-slate-700">
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>
-                            Engineering in General
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>
-                            Architecture and Civil Engineering
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>
-                            Information Sciences
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>
-                            Interdisciplinary Sciences
-                        </li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>Engineering in General</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>Architecture and Civil Engineering</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>Information Sciences</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>Interdisciplinary Sciences</li>
                     </ul>
                 </div>
             </div>

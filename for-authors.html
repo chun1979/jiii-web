@@ -10,20 +10,20 @@
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm">
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24">
-                <div class="flex items-center gap-6">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center gap-4">
                     <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <img class="h-16 w-auto" src="logo.png" alt="JIII Logo">
+                        <img class="h-12 w-auto" src="logo.png" alt="JIII Logo">
                     </a>
-                    <div class="hidden lg:flex flex-col border-l-2 border-slate-900 pl-6 justify-center h-12">
-                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
-                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
+                    <div class="hidden lg:flex flex-col border-l-2 border-slate-300 pl-4 justify-center">
+                        <span class="text-sm font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
+                        <span class="text-sm font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
                     </div>
                 </div>
-                <div class="flex items-center gap-8">
-                    <div class="hidden md:flex space-x-8">
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex space-x-6">
                         <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Home</a>
                         <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims & Scope</a>
                         <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Editorial Board</a>
@@ -31,7 +31,9 @@
                         <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                         <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Contact</a>
                     </div>
-                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-brand-dark hover:bg-slate-800 text-white px-6 py-3 rounded text-sm font-bold transition shadow-md">View on J-STAGE</a>
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-brand-primary text-white px-5 py-2.5 rounded text-sm font-bold transition shadow-md">
+                        View on J-STAGE
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,9 +52,8 @@
             <div class="bg-blue-600 text-white p-6 rounded-xl shadow-lg hover:bg-blue-700 transition">
                 <h3 class="font-bold text-lg mb-2">Submit Manuscript</h3>
                 <p class="text-blue-100 text-sm mb-4">Submit your paper via ScholarOne Manuscripts.</p>
-                <a href="https://mc.manuscriptcentral.com/jsceiiai" target="_blank" class="inline-block bg-white text-blue-700 px-4 py-2 rounded text-sm font-bold">Go to System &rarr;</a>
+                <a href="https://mc.manuscriptcentral.com/jsceiiai" target="_blank" class="inline-block bg-white text-blue-700 px-4 py-2 rounded text-sm font-bold">Go to System →</a>
             </div>
-            
             <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
                 <h3 class="font-bold text-slate-900 text-lg mb-2">Word Template</h3>
                 <p class="text-slate-500 text-sm mb-4">Download the official template for formatting.</p>
@@ -61,7 +62,6 @@
                     Download .docx
                 </a>
             </div>
-
             <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
                 <h3 class="font-bold text-slate-900 text-lg mb-2">APC (Fees)</h3>
                 <p class="text-slate-900 font-mono text-xl mb-1">27,500 JPY</p>
@@ -70,7 +70,6 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
             <div class="lg:col-span-8 space-y-12">
                 <section>
                     <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4">Submission Checklist</h2>
@@ -100,28 +99,18 @@
                         </div>
                     </div>
                 </section>
-                
-                <section>
-                    <h2 class="text-2xl font-serif font-bold text-slate-900 mb-4">Review Process</h2>
-                    <p class="text-slate-600 mb-4">
-                        We use a single-blind peer review process. While formatting is important, we prioritize scientific content during the initial review.
-                    </p>
-                </section>
             </div>
 
             <div class="lg:col-span-4">
                 <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 sticky top-28">
                     <h3 class="font-bold text-slate-900 mb-4">Contact Editorial Office</h3>
-                    <p class="text-sm text-slate-600 mb-4">
-                        For questions regarding submission or the review process:
-                    </p>
+                    <p class="text-sm text-slate-600 mb-4">For questions regarding submission:</p>
                     <a href="mailto:aisymposium@jsce.or.jp" class="flex items-center gap-2 text-brand-primary font-medium hover:underline">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         aisymposium@jsce.or.jp
                     </a>
                 </div>
             </div>
-
         </div>
     </main>
 

@@ -6,25 +6,7 @@
     <title>Contact - JIII</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            primary: '#1e40af',
-                            accent: '#3b82f6',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
@@ -49,6 +31,9 @@
                         <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                         <a href="contact.html" class="text-sm font-bold text-brand-primary border-b-2 border-brand-primary pb-1">Contact</a>
                     </div>
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-brand-primary text-white px-5 py-2.5 rounded text-sm font-bold transition shadow-md">
+                        View on J-STAGE
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,9 +47,7 @@
     </div>
 
     <main class="flex-grow max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        
         <div class="grid md:grid-cols-2 gap-8">
-            
             <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 h-full">
                 <h3 class="text-lg font-bold text-brand-dark mb-4 border-b border-slate-100 pb-2">Editorial Office (Secretariat)</h3>
                 <p class="text-slate-600 mb-6 text-sm">
@@ -91,16 +74,13 @@
                     </li>
                 </ul>
             </div>
-
             <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 h-full">
                 <h3 class="text-lg font-bold text-brand-dark mb-4 border-b border-slate-100 pb-2">Editor-in-Chief</h3>
                 <p class="text-slate-600 mb-6 text-sm">
                     For specific academic inquiries or editorial policy matters.
                 </p>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-2xl">
-                        🎓
-                    </div>
+                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-2xl">🎓</div>
                     <div>
                         <p class="font-bold text-slate-900">Prof. Pang-jo Chun</p>
                         <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">University of Tokyo</p>
@@ -108,7 +88,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
