@@ -7,25 +7,7 @@
     <link rel="icon" href="logo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            primary: '#1e40af',
-                            accent: '#3b82f6',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <body class="bg-white text-slate-800 flex flex-col min-h-screen antialiased">
 
@@ -43,24 +25,23 @@
                 </div>
                 
                 <div class="hidden md:flex items-center gap-6">
-                    <div class="flex space-x-6">
-                        <a href="index.html" class="text-sm font-bold text-brand-primary">Home</a>
-                        <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims & Scope</a>
-                        <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Editorial Board</a>
-                        <a href="for-authors.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">For Authors</a>
+                    <div class="flex space-x-5">
+                        <a href="index.html" class="text-sm font-bold text-brand-primary border-b-2 border-brand-primary pb-1">Home</a>
+                        <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims</a>
+                        <a href="review-policy.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Review Policy</a>
+                        <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Board</a>
+                        <a href="for-authors.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Authors</a>
                         <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                         <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Contact</a>
                     </div>
-                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-brand-primary text-white px-5 py-2.5 rounded text-sm font-bold transition shadow-md">
-                        View on J-STAGE
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-slate-900 hover:bg-brand-primary text-white px-4 py-2 rounded text-sm font-bold transition shadow-md">
+                        J-STAGE
                     </a>
                 </div>
 
                 <div class="flex items-center md:hidden">
                     <button id="mobile-menu-button" type="button" class="text-slate-500 hover:text-slate-900 focus:outline-none p-2">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                     </button>
                 </div>
             </div>
@@ -70,6 +51,7 @@
             <div class="px-4 pt-2 pb-4 space-y-1">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-bold text-brand-primary bg-slate-50">Home</a>
                 <a href="aims-scope.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Aims & Scope</a>
+                <a href="review-policy.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Review Policy</a>
                 <a href="editorial-board.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Editorial Board</a>
                 <a href="for-authors.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">For Authors</a>
                 <a href="ethics.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50">Ethics</a>
@@ -81,7 +63,6 @@
                 </div>
             </div>
         </div>
-
         <div class="h-1 w-full bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500"></div>
     </nav>
 
@@ -99,7 +80,7 @@
                 </span>
             </div>
 
-            <h1 class="text-4xl md:text-7xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 mb-6 leading-tight tracking-tight pb-2">
+            <h1 class="text-4xl md:text-7xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 mb-6 leading-[1.8] tracking-tight pb-2">
                 Intelligence, Informatics <br>and Infrastructure
             </h1>
             
@@ -227,12 +208,17 @@
     </footer>
 
     <script>
-        const btn = document.getElementById('mobile-menu-button');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Merriweather', 'serif'] },
+                    colors: { brand: { dark: '#0f172a', primary: '#1e40af', accent: '#3b82f6' } }
+                }
+            }
+        }
     </script>
 </body>
 </html>
