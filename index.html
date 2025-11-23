@@ -28,28 +28,27 @@
 </head>
 <body class="bg-white text-slate-800 flex flex-col min-h-screen antialiased">
 
-    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 bg-opacity-90 backdrop-blur-md">
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center gap-4">
+            <div class="flex justify-between h-24"> <div class="flex items-center gap-6">
                     <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <img class="h-12 w-auto" src="logo.png" alt="JIII Logo">
+                        <img class="h-16 w-auto" src="logo.png" alt="JIII Logo">
                     </a>
-                    <div class="hidden lg:block border-l border-slate-200 pl-4">
-                        <span class="block text-sm font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
-                        <span class="block text-sm font-light text-slate-500 tracking-tight leading-none">and Infrastructure</span>
+                    <div class="hidden lg:flex flex-col border-l-2 border-slate-900 pl-6 justify-center h-12">
+                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none">Intelligence, Informatics</span>
+                        <span class="text-lg font-bold text-slate-900 tracking-tight leading-none mt-1">and Infrastructure</span>
                     </div>
                 </div>
                 
-                <div class="flex items-center gap-6">
-                    <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="text-sm font-semibold text-brand-primary">Home</a>
-                        <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Aims & Scope</a>
-                        <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Editorial Board</a>
-                        <a href="for-authors.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">For Authors</a>
-                        <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-accent transition">Ethics</a>
+                <div class="flex items-center gap-8">
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html" class="text-sm font-bold text-brand-primary border-b-2 border-brand-primary pb-1">Home</a>
+                        <a href="aims-scope.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Aims & Scope</a>
+                        <a href="editorial-board.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Editorial Board</a>
+                        <a href="for-authors.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">For Authors</a>
+                        <a href="ethics.html" class="text-sm font-medium text-slate-600 hover:text-brand-primary transition">Ethics</a>
                     </div>
-                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-brand-dark hover:bg-brand-primary text-white px-5 py-2 rounded-md text-sm font-medium transition shadow-sm">
+                    <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="bg-brand-dark hover:bg-slate-800 text-white px-6 py-3 rounded text-sm font-bold transition shadow-md">
                         View on J-STAGE
                     </a>
                 </div>
@@ -58,113 +57,152 @@
     </nav>
 
     <div class="relative bg-slate-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 text-center">
             
-            <div class="mb-6 flex justify-center">
-                <span class="px-3 py-1 rounded-full bg-blue-100 text-brand-primary text-xs font-bold tracking-wide uppercase">
+            <div class="mb-8 flex justify-center">
+                <span class="px-4 py-1.5 rounded-full bg-blue-100 text-brand-primary text-xs font-bold tracking-widest uppercase border border-blue-200">
                     Open Access Journal
                 </span>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight mb-6">
-                Bridging <span class="text-brand-accent">AI</span> and <span class="text-brand-primary">Infrastructure</span>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight mb-8 leading-tight">
+                Bridging <span class="text-brand-primary">AI</span>, Data Science <br>and <span class="text-brand-dark">Infrastructure</span>
             </h1>
             
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500 font-light">
-                The official journal of the <strong>Japan Society of Civil Engineers (JSCE)</strong> dedicated to the fusion of data science and civil engineering.
+            <p class="mt-4 max-w-3xl mx-auto text-xl text-slate-600 font-light leading-relaxed">
+                The official journal of the <strong>Japan Society of Civil Engineers (JSCE)</strong>. <br>
+                Accelerating innovation and social implementation of digital twins, AI, and robotics in civil engineering.
             </p>
 
-            <div class="mt-10 flex justify-center gap-4">
-                <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-accent hover:bg-blue-600 md:py-4 md:text-lg shadow-lg hover:shadow-xl transition">
+            <div class="mt-12 flex justify-center gap-6">
+                <a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" class="px-8 py-4 bg-brand-primary hover:bg-blue-700 text-white text-lg font-bold rounded shadow-lg transition transform hover:-translate-y-0.5">
                     Latest Articles
                 </a>
-                <a href="for-authors.html" class="px-8 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 md:py-4 md:text-lg transition">
+                <a href="for-authors.html" class="px-8 py-4 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-lg font-medium rounded shadow-sm transition">
                     Submit Paper
                 </a>
             </div>
         </div>
-        
-        <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-brand-dark via-brand-primary to-brand-accent"></div>
     </div>
 
-    <main class="flex-grow max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <main class="flex-grow max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
             
-            <div class="lg:col-span-2 space-y-8">
+            <div class="lg:col-span-8 space-y-16">
+                
                 <section>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-4 font-serif">About the Journal</h2>
+                    <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6 border-l-4 border-brand-primary pl-4">About the Journal</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                        <em>Intelligence, Informatics and Infrastructure</em> (JIII) solicits papers in the related area of artificial intelligence and data science including research and development, education, survey and testing, and practices.
+                    </p>
                     <p class="text-slate-600 leading-relaxed text-lg">
-                        <em>Intelligence, Informatics and Infrastructure</em> (JIII) is a peer-reviewed open-access journal that publishes original research papers, reviews, and technical reports. We aim to provide a platform for researchers and practitioners to discuss the application of <strong>Artificial Intelligence (AI)</strong>, <strong>IoT</strong>, and <strong>Data Science</strong> in the maintenance, management, and innovation of civil infrastructure.
+                        Technology of AI and data science is rapidly developing and expanding to various fields of application. We serve as a core academic platform for research dissemination, prioritizing innovation, future potential, and social relevance.
                     </p>
                 </section>
 
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
-                        <h3 class="font-bold text-brand-dark mb-2">Scopus & WoS Target</h3>
-                        <p class="text-sm text-slate-600">
-                            We adhere to high ethical standards (COPE) and rigorous peer review to meet the criteria for future inclusion in Scopus and Web of Science.
-                        </p>
+                <section class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+                    <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6">JIII Awards</h2>
+                    <p class="text-slate-600 mb-6">
+                        We recognize outstanding contributions to the field through the following awards:
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded border border-slate-200 shadow-sm flex items-center gap-3">
+                            <span class="text-2xl">🏆</span>
+                            <span class="font-bold text-slate-800">Excellent Paper Award</span>
+                        </div>
+                        <div class="bg-white p-4 rounded border border-slate-200 shadow-sm flex items-center gap-3">
+                            <span class="text-2xl">💻</span>
+                            <span class="font-bold text-slate-800">Excellent Digital Work Award</span>
+                        </div>
+                        <div class="bg-white p-4 rounded border border-slate-200 shadow-sm flex items-center gap-3">
+                            <span class="text-2xl">🚀</span>
+                            <span class="font-bold text-slate-800">Outstanding Potential Paper</span>
+                        </div>
+                        <div class="bg-white p-4 rounded border border-slate-200 shadow-sm flex items-center gap-3">
+                            <span class="text-2xl">✨</span>
+                            <span class="font-bold text-slate-800">Highlighted Paper Award</span>
+                        </div>
                     </div>
-                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
-                        <h3 class="font-bold text-brand-dark mb-2">Global Reach</h3>
-                        <p class="text-sm text-slate-600">
-                            Published by JSCE, disseminated globally via J-STAGE. Fully Open Access (CC BY 4.0) ensuring maximum visibility.
-                        </p>
-                    </div>
-                </div>
+                </section>
+
             </div>
 
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Journal Information</h3>
+            <div class="lg:col-span-4 space-y-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-brand-dark">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Journal Information</h3>
                     <ul class="space-y-4 text-sm">
-                        <li class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">ISSN</span>
-                            <span class="font-mono text-slate-900">XXXX-XXXX</span>
-                        </li>
-                        <li class="flex justify-between border-b border-slate-100 pb-2">
+                        <li class="flex justify-between border-b border-slate-100 pb-3">
                             <span class="text-slate-500">Publisher</span>
-                            <span class="text-right text-slate-900">JSCE</span>
+                            <span class="text-right font-semibold text-slate-900">JSCE</span>
                         </li>
-                        <li class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">License</span>
-                            <span class="text-slate-900">CC BY 4.0</span>
-                        </li>
-                        <li class="flex justify-between pb-2">
+                        <li class="flex justify-between border-b border-slate-100 pb-3">
                             <span class="text-slate-500">Frequency</span>
-                            <span class="text-slate-900">Continuous</span>
+                            <span class="text-right font-semibold text-slate-900">Continuous</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-100 pb-3">
+                            <span class="text-slate-500">License</span>
+                            <span class="text-right font-semibold text-slate-900">CC BY 4.0</span>
+                        </li>
+                        <li class="flex justify-between pb-1">
+                            <span class="text-slate-500">ISSN</span>
+                            <span class="text-right font-mono font-semibold text-slate-900">XXXX-XXXX</span>
                         </li>
                     </ul>
                 </div>
 
-                <a href="for-authors.html" class="block w-full text-center p-4 rounded-lg border-2 border-dashed border-brand-accent text-brand-accent font-bold hover:bg-blue-50 transition">
-                    View Author Guidelines
-                </a>
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h4 class="font-bold text-brand-primary mb-2">Submit Your Research</h4>
+                    <p class="text-sm text-slate-600 mb-4">
+                        Accepted papers can be presented at JSCE symposiums.
+                    </p>
+                    <a href="for-authors.html" class="block w-full text-center py-3 bg-white border border-brand-primary text-brand-primary font-bold rounded hover:bg-brand-primary hover:text-white transition">
+                        View Guidelines
+                    </a>
+                </div>
+
             </div>
 
         </div>
     </main>
 
-    <footer class="bg-brand-dark text-slate-400 py-12 mt-12">
+    <footer class="bg-brand-dark text-slate-400 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
-                <div class="flex items-center gap-3 mb-4 md:mb-0">
-                    <img src="logo.png" alt="JIII" class="h-8 opacity-80 grayscale hover:grayscale-0 transition">
-                    <span class="text-white font-serif tracking-wide">JIII</span>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="logo.png" alt="JIII" class="h-10 opacity-90 grayscale brightness-200">
+                        <span class="text-white font-serif font-bold tracking-wide text-lg">JIII</span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-sm">
+                        Intelligence, Informatics and Infrastructure.<br>
+                        Bridging the gap between advanced data technologies and practical civil engineering applications.
+                    </p>
                 </div>
-                <div class="flex space-x-6 text-sm">
-                    <a href="editorial-board.html" class="hover:text-white transition">Editorial Board</a>
-                    <a href="ethics.html" class="hover:text-white transition">Ethics</a>
-                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Journal</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="aims-scope.html" class="hover:text-white transition">Aims & Scope</a></li>
+                        <li><a href="editorial-board.html" class="hover:text-white transition">Editorial Board</a></li>
+                        <li><a href="ethics.html" class="hover:text-white transition">Publication Ethics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Connect</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://www.jstage.jst.go.jp/browse/jsceiiai/-char/en" target="_blank" class="hover:text-white transition">J-STAGE</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-t border-slate-800 pt-8 text-center md:text-left text-xs">
-                <p>&copy; 2025 Japan Society of Civil Engineers (JSCE). All rights reserved.</p>
-                <p class="mt-2">
-                    Published on <a href="https://www.jstage.jst.go.jp/" class="text-slate-300 hover:text-white underline">J-STAGE</a>. 
-                    Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="text-slate-300 hover:text-white underline">CC BY 4.0</a>.
-                </p>
+            <div class="border-t border-slate-700 pt-8 text-center md:text-left text-xs text-slate-500">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; 2025 Japan Society of Civil Engineers. All rights reserved.</p>
+                    <p class="mt-2 md:mt-0">
+                        1 Yotsuya, Shinjuku-ku, Tokyo, 160-0004, JAPAN
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
